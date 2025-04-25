@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($stmt->execute()) {
                     $_SESSION['user_id'] = $conn->insert_id; // Set session with the new user ID
                     $_SESSION['email'] = $email;
-                    header("Location: dashboard.html");
+                    header("Location: index.html");
                     exit;
                 } else {
                     $error = "There was an error registering your account.";
