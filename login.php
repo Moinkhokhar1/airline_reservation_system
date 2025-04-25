@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['user_id'] = $user;  // Assuming 'id' is the column for user ID
 
         // Redirect to dashboard or wherever you want
-        header("Location: dashboard.php");
+        header("Location: index.html");
         exit;
     } else {
         echo "Invalid username or password";
