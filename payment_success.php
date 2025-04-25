@@ -74,7 +74,7 @@ include 'db.php'
         countdown.textContent = seconds;
         if (seconds <= 0) {
             clearInterval(interval);
-            window.location.href = 'dashboard.php';
+            window.location.href = 'index.html';
         }
     }, 1000);
 </script>
